@@ -1,6 +1,6 @@
 import validator from "./validator.js";
 
-const buttonValidar = document.getElementById("btnvalidar"); /*lo estoy llamando con un document*/
+const buttonValidar = document.getElementById("btnvalidar"); 
 let inputCreditCard = document.getElementById("textcard");
 
 
