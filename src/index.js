@@ -1,34 +1,33 @@
 import validator from "./validator.js";
 
-const buttonValidar = document.getElementById("btnvalidar");
+const buttonValidar = document.getElementById("btnvalidar"); /*lo estoy llamando con un document*/
 let inputCreditCard = document.getElementById("textcard");
-//console.log(inputCreditCard);
+
+
 
 buttonValidar.addEventListener("click", (e) => {
-  e.preventDefault() 
-  let numberCard = inputCreditCard.value; 
-  let respuesta = validator.isValid(numberCard);
-    console.log(respuesta); //la variable debe explcarse si misma.
+  e.preventDefault()
+
+  
+  let numberCard = inputCreditCard.value;
+  let respuesta = document.getElementById("respuesta"); 
+
+  let resultado = validator.isValid(numberCard);
+  inputCreditCard.value= resultado;
+
 
   let enmascarar = validator.maskify(numberCard);
   inputCreditCard.value = enmascarar;
 
-  console.log(enmascarar);
+/*imprimir el mensaje true else*/
 
+  validator.isValid(numberCard);
+  
+  if (validator.isValid(numberCard) == true) {
 
-  inputCreditCard.classList.remove("incorrect");
-
-  if (isNaN(numberCard)) {
-    //entro aqui cuando numberCard no es un numero
-    inputCreditCard.classList.add("incorrect");
-  } else {
-    //numberCard si es un numero y a partir de aqui comienza a hacer la validacion del algoritmo y el maskify
-    inputCreditCard.classList.add("correct");
-
-    //validator.inputCreditCard = inputCreditCard;
-
-    
+    respuesta.innerHTML = "su numero de tarjeta es correcto";
+  }else{
+    respuesta.innerHTML = "su numero de tarjeta es incorrecto";
   }
-});
 
-console.log(validator);
+});

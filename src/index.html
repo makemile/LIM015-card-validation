@@ -9,20 +9,20 @@
 
 <body>
   <header class="header">
-    <img class="header__img" src="" alt="">
-    <div class="header__menu">
+    <p>SECURITY CARD SAC</p>
+    <nav class="header__menu">
       <ul>
         <li><a href="/">Quienes somos</a></li>
         <li><a href="/">Nuestros clientes</a></li>
         <li><a href="/">Ayuda</a></li>
       </ul>
-    </div>
+    </nav>
   </header>
 
   <!---- estructura del formulario --->
 
-  <main role="main">
-    <form name="display">
+  <main>
+    <form>
       <section class="form">
         <h1>Sistema de validación tarjetas de crédito</h1>
       <!---- validar tipo de tarjeta de crédito --->
@@ -45,8 +45,7 @@
             </strong>
           </label>
           <!---- campo  entrada de texto --->
-          <input type="text" class="form-input" id="textcard" name="Número de la trajeta de crédito" step="0"
-            placeholder="Solo números">
+          <input type="text" class="form-input" id="textcard" name="numbercard" step="0" placeholder="Solo números" require>
         </p>
 
         <!---- expiracion TC --->
@@ -68,9 +67,10 @@
       </p>
       <!---- tipo entrada --->
       <p>
-        <input type="button" value="Enviar" onclick="DoIt();">
-        <input type="button" value="Cancelar" onclick="clear()">
+        <input type="button" value="Enviar" id="btnvalidar">
+        <input type="button" value="Resetear" id="btncancelar">
       </p>
+      <p id="respuesta"></p>
       </section>
     </form>
   </main>
