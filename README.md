@@ -28,6 +28,11 @@ Hemos diseñado una interfaz sencilla,fácil y practica No obstante,  Al momento
 
 * El diseño de Ésta aplicacion facilita al usuario la simplificación de procesos de validacion de sus trajetas de credito, al igual que a las empresas que esten suscritas a nuestra aplicacion.
 
+![Presentación1](https://user-images.githubusercontent.com/83560300/122949512-53f78f00-d341-11eb-8418-410840afef14.png)
+
+
+
+
 ## 2. Plan de acción
 
 * Objetivos priorizados en este proyecto:
