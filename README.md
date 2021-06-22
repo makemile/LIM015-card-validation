@@ -5,7 +5,8 @@
 * [1. Preámbulo](#1-Preámbulo)
 * [2. Resumen del proyecto](#1-resumen-del-proyecto)
 * [3. Investigación UX](#2-investigacion-UX)
-* [4. Objetivos de aprendizaje](#3-plan-de-acción)
+* [4. Prototipo final](#2-prototipo-final)
+* [5. Objetivos de aprendizaje](#3-plan-de-acción)
 
 
 ## 2. Preámbulo
@@ -36,7 +37,13 @@ La interfaz esta diseñada para consumidores y/o empresas.
 
 El diseño de Ésta aplicacion facilita al usuario la simplificación de procesos de validacion de sus trajetas de credito, al igual que a las empresas que esten suscritas a nuestra aplicacion.
 
-## 4. Objetivos de aprendizaje
+## 4. Prototipo final
+
+
+![Presentación1](https://user-images.githubusercontent.com/83560300/122963370-d2f1c500-d34b-11eb-9331-5c5c17bf5014.png)
+
+
+## 5. Objetivos de aprendizaje
 
 ### HTML y CSS
 
