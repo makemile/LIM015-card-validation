@@ -20,7 +20,7 @@ const validator = {
 
     digits = digits.map((num) => {
       if (num >= 10) {
-        return num -= 9;
+        return num -= 9;  
       } else {
         return num;
       }
@@ -28,13 +28,13 @@ const validator = {
 
     /*sumar los numeros de las posiciones pares e impares*/
 
-    let totalSuma = digits.reduce((accumulator, currentValue) => {
+    let calcSum = digits.reduce((accumulator, currentValue) => {
       return accumulator + currentValue;
     });
 
     /* sean multiplos de 10 */
-    
-    if (totalSuma % 10 == 0) {
+
+    if (calcSum % 10 == 0) {
       return true;
     } else {
       return false;
