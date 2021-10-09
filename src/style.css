@@ -8,6 +8,7 @@ body {
   margin: 0px;
   font-family: sans-serif;
   background: linear-gradient(#aaaaaa,#2B4F60);
+  background-image: url('./image/bg-tarjeta-02.jpg');
 
 }
 
@@ -47,14 +48,15 @@ body {
   flex-direction:column;
   border: 2px solid rgb(204, 199, 199);
   border-radius: 40px;
-  color: rgb(65, 63, 63);
+  /* color: rgb(65, 63, 63); */
   padding: 60px 68px 40px;
   min-height: 280px;
-  width: 450px;
+  width: 400px;
   justify-content:space-between;
   position: relative;
   color: white;
-
+  margin: auto;
+  
 }
 
 
