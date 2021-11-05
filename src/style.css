@@ -7,8 +7,8 @@
 body {
   margin: 0px;
   font-family: sans-serif;
-  background: linear-gradient(#aaaaaa,#2B4F60);
-  background-image: url('./image/bg-tarjeta-02.jpg');
+  background-image: url('./image/93472.jpg');
+  background-repeat: no-repeat;
 
 }
 
@@ -42,22 +42,59 @@ body {
   cursor: pointer;
 }
 
+.titulo{
+  text-align: center;
+}
 
+.submit{
+  text-align: center;
+}
+.button{
+  
+  
+ border-radius: 10px; 
+ width: 50px;
+}
  .form {
   display: flex;
   flex-direction:column;
   border: 2px solid rgb(204, 199, 199);
   border-radius: 40px;
-  /* color: rgb(65, 63, 63); */
   padding: 60px 68px 40px;
   min-height: 280px;
   width: 400px;
   justify-content:space-between;
   position: relative;
-  color: white;
+  color:rgb(241, 241, 248);
+  background-color: rgb(143, 140, 140);
   margin: auto;
   
 }
+
+
+
+.input1 {
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid grey;
+}
+
+.input2{
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid grey;
+
+}
+
+.input3{
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid grey;
+}
+
+
+
+
 
 
 footer{
