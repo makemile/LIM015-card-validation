@@ -9,8 +9,6 @@
 
 <body>
   <header class="header">
-    <p>SECURITY CARD SAC</p>
-    
   </header>
 
   <!---- estructura del formulario --->
@@ -18,13 +16,13 @@
   <main>
     <form>
       <section class="form">
-        <h1>Sistema de validación tarjetas de crédito</h1>
+        <h1 class="titulo">Sistema de validación tarjetas de crédito</h1>
       <!---- validar tipo de tarjeta de crédito --->
         <p>
           <label for="card">
           <span>Tipo de tarjeta:</span>
           </label>
-          <select name="usercard" id="card">
+          <select name="usercard" class="input1" id="card">
           <option value="visa">Visa</option>
           <option value="mc">Mastercard</option>
           <option value="amex">AmericanExpress</option>
@@ -39,7 +37,7 @@
             </strong>
           </label>
           <!---- campo  entrada de texto --->
-          <input type="text"  id="textcard" name="numbercard"  placeholder="Solo números" require>
+          <input type="text" class="input2" id="textcard" name="numbercard"  placeholder="Solo números" require>
         </p>
 
         <!---- expiracion TC --->
@@ -50,7 +48,7 @@
               <abbr title="required">*</abbr>
             </strong>
           </label>
-          <input type="date" id="date" name="expiration">
+          <input type="date" class = "input3" id="date" name="expiration">
         </p>
          <!---- Aviso --->
       <p>"Required fields are followed by"
@@ -59,11 +57,12 @@
         </strong>
         "."
       </p>
-      <!---- tipo entrada --->
-      <p>
-        <input type="button" value="Enviar" id="btnvalidar">
-      </p>
       <p id="respuesta"></p>
+      <!---- tipo entrada --->
+      <p class="submit">
+        <input type="button" class="button" value="Enviar" id="btnvalidar">
+      </p>
+      
       </section>
     </form>
   </main>

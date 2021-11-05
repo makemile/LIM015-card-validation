@@ -12,14 +12,10 @@ buttonValidar.addEventListener("click", (e) => {
   let numberCard = inputCreditCard.value;
   const respuesta = document.getElementById("respuesta"); 
 
- /* let resultado = validator.isValid(numberCard); /*puedo qiitarlo*/
-  //*inputCreditCard.value= resultado;
-
 
   let enmascarar = validator.maskify(numberCard);
   inputCreditCard.value = enmascarar;
 
-/*imprimir el mensaje true else*/
 
     if (validator.isValid(numberCard)) { 
       return respuesta.innerHTML = "su numero de tarjeta es correcto";
