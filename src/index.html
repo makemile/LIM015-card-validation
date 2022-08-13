@@ -14,65 +14,68 @@
     <main>
       <form>
         <section class="form">
-          <h1 class="titulo">Sistema de validación tarjetas de crédito</h1>
-          <!---- validar tipo de tarjeta de crédito --->
-          <p>
-            <label for="card">
-              <span>Tipo de tarjeta:</span>
-            </label>
-            <select name="usercard" class="input1" id="card">
-              <option value="visa">Visa</option>
-              <option value="mc">Mastercard</option>
-              <option value="amex">AmericanExpress</option>
-            </select>
-          </p>
+          <div class="form-text">
+            <h1 class="titulo">Sistema de validación tarjetas de crédito</h1>
+            <!---- validar tipo de tarjeta de crédito --->
+            <p>
+              <label for="card">
+                <span>Tipo de tarjeta:</span>
+              </label>
+              <select name="usercard" class="input1" id="card">
+                <option value="visa">Visa</option>
+                <option value="mc">Mastercard</option>
+                <option value="amex">AmericanExpress</option>
+              </select>
+            </p>
 
-          <p>
-            <label for="textcard">
-              <span>Numero de la Tarjeta de crédito</span>
-              <strong>
-                <abbr title="requerid">*</abbr>
-              </strong>
-            </label>
-            <!---- campo  entrada de texto --->
-            <input
-              type="text"
-              class="input2"
-              id="textcard"
-              name="numbercard"
-              placeholder="Solo números"
-              require
-            />
-          </p>
+            <p>
+              <label for="textcard">
+                <span>Numero de la Tarjeta de crédito</span>
+                <strong>
+                  <abbr title="requerid">*</abbr>
+                </strong>
+              </label>
+              <!---- campo  entrada de texto --->
+              <input
+                type="text"
+                class="input2"
+                id="textcard"
+                name="numbercard"
+                placeholder="Solo números"
+                require
+              />
+            </p>
 
-          <!---- expiracion TC --->
-          <p>
-            <label for="date">
-              <span>Fecha de expiración</span>
+            <!---- expiracion TC --->
+            <p>
+              <label for="date">
+                <span>Fecha de expiración</span>
+                <strong>
+                  <abbr title="required">*</abbr>
+                </strong>
+              </label>
+              <input type="date" class="input3" id="date" name="expiration" />
+            </p>
+            <!---- Aviso --->
+            <p>
+              "Required fields are followed by"
               <strong>
                 <abbr title="required">*</abbr>
               </strong>
-            </label>
-            <input type="date" class="input3" id="date" name="expiration" />
-          </p>
-          <!---- Aviso --->
-          <p>
-            "Required fields are followed by"
-            <strong>
-              <abbr title="required">*</abbr>
-            </strong>
-            "."
-          </p>
-          <p id="respuesta"></p>
-          <!---- tipo entrada --->
-          <p class="submit">
-            <input
-              type="button"
-              class="button"
-              value="Enviar"
-              id="btnvalidar"
-            />
-          </p>
+              "."
+            </p>
+            <p id="respuesta"></p>
+            <!---- tipo entrada --->
+            <p class="submit">
+              <input
+                type="button"
+                class="button"
+                value="Enviar"
+                id="btnvalidar"
+              />
+            </p>
+          </div>
+          <img src="./img.svg" class="img-visa" alt="visa" />
         </section>
       </form>
     </main>
